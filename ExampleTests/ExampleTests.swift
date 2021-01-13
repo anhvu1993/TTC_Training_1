@@ -29,9 +29,9 @@ class ExampleTests: XCTestCase {
             queue.pushSemaphore(i)
         }
         
-        DispatchQueue.concurrentPerform(iterations: 1000) { (i) in
-            _ = queue.popSemaphore()
-        }
+//        DispatchQueue.concurrentPerform(iterations: 1000) { (i) in
+//            _ = queue.popSemaphore()
+//        }
     }
     
     func testLock() throws {
